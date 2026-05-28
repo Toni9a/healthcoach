@@ -35,28 +35,28 @@ python3 /Users/toni/strav/site/health_bridge_server.py
 - Working local LAN URL example:
 
 ```text
-http://192.168.1.196:8765
+https://toni-fitness-dashboard.onrender.com
 ```
 
 - Live health endpoint:
 
 ```text
-http://192.168.1.196:8765/api/live-health
+https://toni-fitness-dashboard.onrender.com/api/live-health
 ```
 
 - Dashboard endpoint:
 
 ```text
-http://192.168.1.196:8765/api/dashboard
+https://toni-fitness-dashboard.onrender.com/api/dashboard
 ```
 
 - Other useful backend endpoints:
 
 ```text
-http://192.168.1.196:8765/api/dashboard
-http://192.168.1.196:8765/api/context
-http://192.168.1.196:8765/api/plan/workout?date=2026-05-27
-http://192.168.1.196:8765/api/health/food-focus
+https://toni-fitness-dashboard.onrender.com/api/dashboard
+https://toni-fitness-dashboard.onrender.com/api/context
+https://toni-fitness-dashboard.onrender.com/api/plan/workout?date=2026-05-27
+https://toni-fitness-dashboard.onrender.com/api/health/food-focus
 ```
 
 ### iPhone app
@@ -79,7 +79,7 @@ http://192.168.1.196:8765/api/health/food-focus
 4. Set backend URL to:
 
 ```text
-http://192.168.1.196:8765/api/live-health
+https://toni-fitness-dashboard.onrender.com/api/live-health
 ```
 
 5. Tap `Load Today's Data`
@@ -89,13 +89,13 @@ http://192.168.1.196:8765/api/live-health
 Summary:
 
 ```text
-http://192.168.1.196:8765/index.html
+https://toni-fitness-dashboard.onrender.com/index.html
 ```
 
 Plan:
 
 ```text
-http://192.168.1.196:8765/plan.html
+https://toni-fitness-dashboard.onrender.com/plan.html
 ```
 
 ## Notes
@@ -117,7 +117,10 @@ python3 /Users/toni/strav/site/build_dashboard_data.py
 - Full backend rebuild from source:
 
 ```bash
-curl -X POST http://192.168.1.196:8765/api/admin/rebuild
+curl -X POST https://toni-fitness-dashboard.onrender.com/api/admin/rebuild
+
+Hosted note:
+- Current Render deployment is on the free tier and writes runtime state to `/tmp/toni-data`, so synced live data is not persistent across service restarts.
 ```
 
 - Current generated dashboard window after refresh:

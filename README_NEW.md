@@ -55,13 +55,13 @@ python3 /Users/toni/strav/site/health_bridge_server.py
 ```bash
 python3 /Users/toni/strav/generate_splits_last_6_months.py
 python3 /Users/toni/strav/site/build_dashboard_data.py
-curl -X POST http://192.168.1.196:8765/api/admin/rebuild
+curl -X POST https://toni-fitness-dashboard.onrender.com/api/admin/rebuild
 ```
 
 ### Open the dashboard
 
-- Summary: `http://192.168.1.196:8765/index.html`
-- Plan: `http://192.168.1.196:8765/plan.html`
+- Summary: `https://toni-fitness-dashboard.onrender.com/index.html`
+- Plan: `https://toni-fitness-dashboard.onrender.com/plan.html`
 
 ### Hosted-ready files
 
@@ -98,7 +98,7 @@ The app syncs Apple Health into the backend and can also display the dashboard l
 3. Set the backend URL to:
 
 ```text
-http://192.168.1.196:8765/api/live-health
+https://toni-fitness-dashboard.onrender.com/api/live-health
 ```
 
 4. Tap `Load Today's Data`.
@@ -138,4 +138,7 @@ If you open a fresh chat, the fastest context to mention is:
 - the active exports are in `MAY apple_health_export` and `export_56684747-2`
 - the backend is `site/health_bridge_server.py`
 - the dashboard reads from `/api/dashboard` and `/api/context`
-- the phone app posts to `/api/live-health`
+- the phone app posts to `https://toni-fitness-dashboard.onrender.com/api/live-health`
+
+Current hosting note:
+- Render free tier is live, but uses temporary `/tmp` storage instead of a persistent disk. Live sync data and SQLite state can be reset on restart/spin-down.

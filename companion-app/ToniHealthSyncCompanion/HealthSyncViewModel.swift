@@ -5,7 +5,7 @@ import SwiftUI
 final class HealthSyncViewModel: ObservableObject {
     static let shared = HealthSyncViewModel()
 
-    @AppStorage("endpointURLString") var endpointURLString: String = "http://192.168.1.196:8765/api/live-health"
+    @AppStorage("endpointURLString") var endpointURLString: String = "https://toni-fitness-dashboard.onrender.com/api/live-health"
     @Published var isAuthorized = false
     @Published var isSyncing = false
     @Published var lastMessage = "Not synced yet."
