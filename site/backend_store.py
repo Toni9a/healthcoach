@@ -21,7 +21,14 @@ def utc_now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+def ensure_data_dirs() -> None:
+    DATA_ROOT.mkdir(parents=True, exist_ok=True)
+    DB_FILE.parent.mkdir(parents=True, exist_ok=True)
+    LIVE_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+
 def get_conn() -> sqlite3.Connection:
+    ensure_data_dirs()
     conn = sqlite3.connect(DB_FILE)
     conn.row_factory = sqlite3.Row
     return conn

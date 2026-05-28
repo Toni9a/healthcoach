@@ -9,8 +9,8 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: TONI_DATA_DIR
-        value: /var/data
+        value: /tmp/toni-data
       - key: TONI_DB_FILE
-        value: /var/data/toni_backend.sqlite3
+        value: /tmp/toni-data/toni_backend.sqlite3
       - key: TONI_LIVE_FILE
-        value: /var/data/live-health.json
+        value: /tmp/toni-data/live-health.json
