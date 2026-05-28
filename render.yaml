@@ -14,7 +14,3 @@ services:
         value: /var/data/toni_backend.sqlite3
       - key: TONI_LIVE_FILE
         value: /var/data/live-health.json
-    disk:
-      name: toni-fitness-data
-      mountPath: /var/data
-      sizeGB: 1
