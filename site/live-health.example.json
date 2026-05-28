@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-14",
+  "source": "Apple Health Shortcut",
+  "metrics": {
+    "steps": 14820,
+    "active_kcal": 824,
+    "resting_hr": 52,
+    "hrv": 68.4,
+    "sleep_hours": 7.6,
+    "body_mass_kg": 90.7,
+    "vo2max": 46.9
+  },
+  "workouts": [
+    {
+      "type": "Running",
+      "start": "2026-05-14T18:30:00+01:00",
+      "duration_min": 25,
+      "distance_km": 3.2
+    }
+  ],
+  "notes": "Example payload shape for the local bridge."
+}

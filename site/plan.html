@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toni New Plan</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="top-nav">
+        <a class="nav-link" href="./index.html">Summary</a>
+        <a class="nav-link active" href="./plan.html">New Plan</a>
+      </nav>
+
+      <header class="hero hero-plan">
+        <div class="hero-copy">
+          <p class="eyebrow">Next Phase</p>
+          <h1>Hybrid Plan Setup</h1>
+          <p class="hero-text">
+            This page is reserved for the new training plan. It will be built around your Saturday run club long run, muscle retention, home leg work, upper push and pull days, and getting closer to sub-20.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <div class="body-card">
+            <h2 class="body-name">Plan Inputs</h2>
+            <ul class="body-notes">
+              <li>Saturday long run is fixed</li>
+              <li>Home leg day required</li>
+              <li>Upper push and upper pull required</li>
+              <li>Keep knee load sensible</li>
+              <li>Support fat loss and muscle retention</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="section-grid">
+          <article class="card span-12">
+            <h2>Plan Goal</h2>
+            <div class="split-layout">
+              <div>
+                <p class="muted">
+                  This block is designed to move you toward a faster 5K without repeating the same moderate-hard pattern that was blunting progress.
+                </p>
+                <ul class="plain-list">
+                  <li>Build a real aerobic base so easy days stay easy.</li>
+                  <li>Keep one main quality run each week for 5K progress.</li>
+                  <li>Retain muscle with home legs plus upper push and pull work.</li>
+                  <li>Keep knee load under control and stop stacking fatigue.</li>
+                </ul>
+              </div>
+              <div class="kpi-stack">
+                <div class="kpi-line"><span>Block length</span><strong>8 weeks</strong></div>
+                <div class="kpi-line"><span>Main run focus</span><strong>Aerobic rebuild + 5K quality</strong></div>
+                <div class="kpi-line"><span>Strength split</span><strong>Legs, Push, Pull</strong></div>
+                <div class="kpi-line"><span>Fixed session</span><strong>Saturday run club long run</strong></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card span-12">
+            <div class="section-title">
+              <div>
+                <h2>Daily Plan Viewer</h2>
+                <p class="muted">Exact day-by-day schedule from `2026-05-05` through `2026-06-12`.</p>
+              </div>
+              <a class="nav-link" href="./plan_schedule.csv" download>Download CSV</a>
+            </div>
+            <div class="plan-controls">
+              <button id="prev-day" class="plan-button" type="button">Previous Day</button>
+              <input id="plan-date-picker" class="plan-date-input" type="date" min="2026-05-05" max="2026-06-12">
+              <button id="next-day" class="plan-button" type="button">Next Day</button>
+              <button id="jump-today" class="plan-button plan-button-strong" type="button">Jump To Current Day</button>
+            </div>
+            <div id="selected-workout" class="selected-workout"></div>
+          </article>
+
+          <article class="card span-8">
+            <h2>Weekly Schedule</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Session</th>
+                  <th>Target</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday</td>
+                  <td>Upper Push + walk</td>
+                  <td>Muscle retention</td>
+                  <td>No hard running. Let the legs come down from the weekend.</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>Quality run</td>
+                  <td>Threshold or 5K-specific work</td>
+                  <td>This is the main hard run of the week.</td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>Easy run + mobility</td>
+                  <td>Zone 2</td>
+                  <td>Cap HR around 145-150. Slow enough to stay genuinely easy.</td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>Upper Pull + optional recovery jog</td>
+                  <td>Muscle retention + low stress</td>
+                  <td>Jog only if knee and fatigue are both fine.</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>Home Leg Day + optional strides</td>
+                  <td>Strength + coordination</td>
+                  <td>Moderate volume only so Saturday still works.</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>Run club long run</td>
+                  <td>Aerobic endurance</td>
+                  <td>Stay controlled. This should not turn into a race every week.</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>Easy run or full rest</td>
+                  <td>Recovery volume</td>
+                  <td>Choose full rest if the knee is irritated or fatigue is high.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="card span-4">
+            <h2>Run Rules</h2>
+            <ul class="plain-list">
+              <li>Easy means conversational, not “steady” and not “a bit spicy.”</li>
+              <li>If HR creeps above about 150 on easy days, slow down or take short walk resets.</li>
+              <li>No back-to-back hard run days.</li>
+              <li>Saturday long run stays mostly aerobic even with the club.</li>
+              <li>If knee pain rises, cut run load before cutting food.</li>
+            </ul>
+          </article>
+
+          <article class="card span-6">
+            <h2>Run Progression</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Phase</th>
+                  <th>Weeks</th>
+                  <th>Main work</th>
+                  <th>Long run</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rebuild</td>
+                  <td>1-2</td>
+                  <td>One threshold session per week, more true easy volume</td>
+                  <td>75-90 min easy</td>
+                </tr>
+                <tr>
+                  <td>Build</td>
+                  <td>3-5</td>
+                  <td>Alternate threshold and 5K reps each week</td>
+                  <td>80-95 min easy</td>
+                </tr>
+                <tr>
+                  <td>Sharpen</td>
+                  <td>6-7</td>
+                  <td>More race-specific reps, less junk volume</td>
+                  <td>75-90 min controlled</td>
+                </tr>
+                <tr>
+                  <td>Test</td>
+                  <td>8</td>
+                  <td>Reduced volume, one light quality session, then 5K test</td>
+                  <td>Shorter and easy</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+
+          <article class="card span-6">
+            <h2>Tuesday Quality Menu</h2>
+            <div class="plan-stack">
+              <div class="plan-block">
+                <h3>Weeks 1 and 3</h3>
+                <p>`2 x 10 min` tempo with `2 min` jog, then `4 x 20 sec` strides.</p>
+              </div>
+              <div class="plan-block">
+                <h3>Weeks 2 and 4</h3>
+                <p>`5 x 3 min` at 5K effort with `2 min` easy jog. Hard but controlled.</p>
+              </div>
+              <div class="plan-block">
+                <h3>Weeks 5 and 6</h3>
+                <p>`6 x 800m` at controlled 5K pace with `90 sec` jog, or `8 x 400m` if the knee prefers shorter reps.</p>
+              </div>
+              <div class="plan-block">
+                <h3>Weeks 7 and 8</h3>
+                <p>`3 x 1km` at 5K pace, then taper into a 5K time trial at the end of week 8.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card span-4">
+            <h2>Upper Push</h2>
+            <ul class="plain-list">
+              <li>Push-ups or weighted push-ups: `4 x 6-12`</li>
+              <li>Pike push-ups or DB shoulder press: `3 x 8-12`</li>
+              <li>Dips or bench dips: `3 x 8-12`</li>
+              <li>Lateral raises: `3 x 12-20`</li>
+              <li>Triceps extensions: `2-3 x 12-15`</li>
+              <li>Core: `2-3` hard sets</li>
+            </ul>
+          </article>
+
+          <article class="card span-4">
+            <h2>Upper Pull</h2>
+            <ul class="plain-list">
+              <li>Pull-ups, assisted pull-ups, or rows: `4 x 6-12`</li>
+              <li>One-arm rows: `3 x 8-12`</li>
+              <li>Rear-delt raises or band pull-aparts: `3 x 12-20`</li>
+              <li>Curls: `3 x 10-15`</li>
+              <li>Grip or hang work: `2-3` sets</li>
+              <li>Optional calf raises: `3 x 12-20`</li>
+            </ul>
+          </article>
+
+          <article class="card span-4">
+            <h2>Home Leg Day</h2>
+            <ul class="plain-list">
+              <li>Split squats or Bulgarian split squats: `3-4 x 6-10` each side</li>
+              <li>Romanian deadlifts with dumbbells or backpack load: `3-4 x 8-12`</li>
+              <li>Step-ups: `3 x 8-12` each side</li>
+              <li>Glute bridge or hip thrust: `3 x 10-15`</li>
+              <li>Hamstring sliders or curls: `3 x 8-12`</li>
+              <li>Tib raises and calf raises: `2-3 x 15-20`</li>
+            </ul>
+          </article>
+
+          <article class="card span-8">
+            <h2>Calories, Protein, And Fueling</h2>
+            <div class="split-layout">
+              <div>
+                <div class="kpi-stack">
+                  <div class="kpi-line"><span>Estimated maintenance</span><strong>~2965 kcal/day</strong></div>
+                  <div class="kpi-line"><span>Fat-loss target</span><strong>~2615-2815 kcal/day</strong></div>
+                  <div class="kpi-line"><span>Easy day target</span><strong>~2700-2900 kcal/day</strong></div>
+                  <div class="kpi-line"><span>Long-run day target</span><strong>~3100-3400 kcal/day</strong></div>
+                  <div class="kpi-line"><span>Protein</span><strong>~183-201g/day</strong></div>
+                </div>
+              </div>
+              <div>
+                <h3>Fueling rules</h3>
+                <ul class="plain-list">
+                  <li>Keep protein high every day to support muscle retention.</li>
+                  <li>Push carbs up around Tuesday quality and Saturday long run.</li>
+                  <li>Do not force a harsh deficit on workout or long-run days.</li>
+                  <li>If recovery drops, add carbs before adding more run intensity.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card span-4">
+            <h2>Checkpoints</h2>
+            <ul class="plain-list">
+              <li>Easy pace at the same HR should begin to improve.</li>
+              <li>RHR should stay stable rather than trending upward with fatigue.</li>
+              <li>Knee pain should stay mild and non-progressive.</li>
+              <li>Quality sessions should feel sharper because easy days are actually easy.</li>
+              <li>Retest 5K after week 8, not every other week.</li>
+            </ul>
+          </article>
+
+          <article class="card span-12">
+            <h2>Full Schedule</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Day</th>
+                    <th>Session</th>
+                    <th>Duration</th>
+                    <th>Pace</th>
+                    <th>HR</th>
+                    <th>Details</th>
+                  </tr>
+                </thead>
+                <tbody id="plan-table-body"></tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script src="./plan-data.js"></script>
+    <script src="./plan-script.js"></script>
+  </body>
+  </html>

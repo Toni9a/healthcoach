@@ -1,0 +1,26 @@
+.DS_Store
+__pycache__/
+*.pyc
+.xcode/
+companion-app/.DerivedData/
+companion-app/**/xcuserdata/
+companion-app/**/UserInterfaceState.xcuserstate
+
+# Local runtime/state
+site/toni_backend.sqlite3
+site/live-health.json
+site/__pycache__/
+
+# Large raw exports and archives
+healthmay.zip
+MAY apple_health_export/
+health data/
+export_56684747-2/
+strvexport_56684747/
+
+# Local generated analysis artifacts
+splits_last_6_months.csv
+splits_last_6_months.xlsx
+run_actual_days_summary.csv
+run_plan_match_results.csv
+run_plan_vs_strava_matches.xlsx

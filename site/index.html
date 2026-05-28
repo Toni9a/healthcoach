@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toni Performance Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <nav class="top-nav">
+        <a class="nav-link active" href="./index.html">Summary</a>
+        <a class="nav-link" href="./plan.html">New Plan</a>
+      </nav>
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Training + Health Analysis System</p>
+          <h1>Toni Performance Dashboard</h1>
+          <p class="hero-text">
+            A direct summary of what your body actually did across Strava, Apple Health, and the matched run-plan files.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <div id="body-card" class="body-card"></div>
+        </div>
+      </header>
+
+      <main id="app" class="dashboard"></main>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+  </html>

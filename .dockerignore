@@ -1,0 +1,10 @@
+.git
+.DS_Store
+__pycache__/
+.xcode/
+companion-app/
+health data/
+MAY apple_health_export/
+export_56684747-2/
+strvexport_56684747/
+*.xlsx

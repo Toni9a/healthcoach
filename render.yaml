@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: toni-fitness-dashboard
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TONI_DATA_DIR
+        value: /var/data
+      - key: TONI_DB_FILE
+        value: /var/data/toni_backend.sqlite3
+      - key: TONI_LIVE_FILE
+        value: /var/data/live-health.json
+    disk:
+      name: toni-fitness-data
+      mountPath: /var/data
+      sizeGB: 1
